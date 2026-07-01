@@ -22,7 +22,8 @@
       box-sizing: border-box;          /* чтобы padding не ломал 100% */
     }
     #location {
-      max-width: 90%;  
+      max-width: 90%; 
+      background: rgba(0, 0, 0, 0.5);
       font-size: 50px;
     }
   </style>
@@ -63,8 +64,7 @@
           let fullAddress = "";
           if (road) fullAddress += road;
           if (house) fullAddress += `, ${house}`;
-          if (suburb) fullAddress += `, ${suburb}`;
-         
+          if (suburb) fullAddress += `, ${suburb}`;   
 
           output.textContent = fullAddress || "Адрес не найден.";
         } catch (err) {

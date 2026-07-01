@@ -83,9 +83,6 @@ async function showLocation() {
         if (road) fullAddress += road;
         if (house) fullAddress += ", " + house;
         if (suburb) fullAddress += ", " + suburb;
-        if (city) fullAddress += ", " + city;
-        if (state) fullAddress += ", " + state;
-        if (country) fullAddress += ", " + country;
 
         output.textContent = fullAddress || "Адрес не найден.";
 
